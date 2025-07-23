@@ -3,37 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Saad's Professional Website</title>
+  <title>Alight Motion XML Hub</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🌐 Saad's Website</h1>
-    <p class="subtitle">Welcome to my professional portfolio</p>
-  </header>
-
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Hello! I’m Saad, a passionate web developer learning full-stack development.</p>
-    </section>
-
-    <section class="projects">
-      <h2>My Projects</h2>
+  <aside class="sidebar">
+    <h2>🎞 XML Hub</h2>
+    <nav>
       <ul>
-        <li>🔧 Inventory System</li>
-        <li>🐍 Snake Game (C++)</li>
-        <li>🌐 Full-stack Website (in progress)</li>
+        <li><a href="#" onclick="showSection('home')">🏠 Home</a></li>
+        <li><a href="#" onclick="showSection('cc-effects')">🎨 CC Effects</a></li>
+        <li><a href="#" onclick="showSection('text-effects')">🔠 Text Effects</a></li>
+        <li><a href="#" onclick="showSection('submit')">📤 Submit XML</a></li>
       </ul>
+    </nav>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </aside>
+
+  <main class="main">
+    <header>
+      <h1>Alight Motion XML Templates</h1>
+      <p>Download free custom effects & animated text templates for Alight Motion</p>
+    </header>
+
+    <section id="home" class="section active">
+      <h2>Welcome!</h2>
+      <p>Explore high-quality XML presets for your video editing.</p>
     </section>
 
-    <button onclick="showMessage()">Contact Me</button>
-  </main>
+    <section id="cc-effects" class="section">
+      <h2>🎨 CC Effects (10 XMLs)</h2>
+      <div class="grid">
+        <!-- Loop 10 items -->
+        <div class="card">
+          <h3>Vibrant Glow</h3>
+          <p>Colorful glow preset for smooth transitions</p>
+          <a href="xmls/cc1.xml" download>⬇️ Download</a>
+        </div>
+        <div class="card">
+          <h3>Cinematic Shadows</h3>
+          <p>Dark tone CC with shadow depth</p>
+          <a href="xmls/cc2.xml" download>⬇️ Download</a>
+        </div>
+        <!-- Add 8 more -->
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Saad Akram — All rights reserved</p>
-  </footer>
+    <section id="text-effects" class="section">
+      <h2>🔠 Text Effects (10 XMLs)</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wave Text</h3>
+          <p>Animated wavy text reveal</p>
+          <a href="xmls/text1.xml" download>⬇️ Download</a>
+        </div>
+        <div class="card">
+          <h3>Zoom Pulse</h3>
+          <p>Text zoom + pulse bounce effect</p>
+          <a href="xmls/text2.xml" download>⬇️ Download</a>
+        </div>
+        <!-- Add 8 more -->
+      </div>
+    </section>
+
+    <section id="submit" class="section">
+      <h2>📤 Submit Your XML</h2>
+      <form id="submitForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="url" placeholder="XML File URL" required />
+        <button type="submit">Submit XML</button>
+      </form>
+      <p id="formStatus"></p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+
