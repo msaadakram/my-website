@@ -1,132 +1,156 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --yellow: #FFD600;
+  --red: #FF2D55;
+  --black: #000;
+  --white: #fff;
 }
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #000;
-  color: #fff;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #6a1b9a, #d4af37);
-  padding: 10px 20px;
+  background: linear-gradient(to bottom, #7B1FA2, #FFB300);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .logo {
+  background: green;
+  color: red;
   font-size: 1.2rem;
   font-weight: bold;
-  background: green;
-  padding: 5px 10px;
-  color: red;
+  padding: 10px;
+  line-height: 1.2;
   text-align: center;
 }
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  font-weight: bold;
   color: yellow;
-}
-.search-icon {
-  cursor: pointer;
+  font-weight: bold;
 }
 
+/* Categories */
 .categories {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background: linear-gradient(to bottom, #6a1b9a, #d4af37);
-  padding: 20px 0;
+  padding: 20px 10px;
+  background: linear-gradient(to bottom, #7B1FA2, #D4AF37);
 }
-.card {
+.category-card {
+  background: var(--bg);
+  padding: 10px;
   text-align: center;
-}
-.card img {
+  border-radius: 0 0 20px 20px;
   width: 100px;
+}
+.category-card img {
+  width: 80px;
   height: auto;
 }
-.card p {
+.category-card span {
+  display: block;
   background: black;
   color: white;
   font-weight: bold;
-  padding: 5px 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
+/* Highlight */
 .highlight {
-  background: #000;
-  color: #fff;
+  background: black;
   padding: 20px;
 }
-.highlight-label {
+.highlight-header {
   background: yellow;
   color: red;
-  padding: 10px;
   font-weight: bold;
+  padding: 10px;
   display: inline-block;
-  margin-bottom: 20px;
 }
-.highlight-item {
+.highlight-main {
   display: flex;
+  margin-top: 15px;
   gap: 20px;
-  align-items: center;
 }
-.highlight-item img {
-  width: 150px;
+.highlight-main img {
+  width: 200px;
 }
-.highlight-item button {
+.highlight-info button {
   background: black;
   color: yellow;
   padding: 10px;
   border: 1px solid yellow;
-  cursor: pointer;
+  margin-top: 10px;
 }
 
-.grid-section {
-  background: #000;
+/* Posts */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
 }
-.card-horizontal {
+.post {
   display: flex;
-  gap: 20px;
+  width: 48%;
   margin-bottom: 20px;
+  background: #111;
 }
-.card-horizontal img {
-  width: 250px;
-  border-radius: 8px;
+.post img {
+  width: 200px;
 }
-.card-horizontal button {
+.post-info {
+  padding: 10px;
+}
+.post-info button {
   background: black;
   color: yellow;
   border: 1px solid yellow;
   padding: 8px;
-  cursor: pointer;
+  margin-top: 10px;
+}
+.surprise {
+  background: #111;
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+.surprise img {
+  width: 100%;
 }
 
+/* Footer */
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
   background: yellow;
   color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
-.about, .disclaimer {
-  width: 45%;
+footer h3 {
+  margin-bottom: 10px;
 }
-.about img {
-  margin-top: 10px;
+footer img {
   width: 150px;
+  margin-top: 10px;
 }
-.dmca {
-  margin-top: 20px;
+.dmca-button {
   background: orange;
-  padding: 10px 20px;
+  padding: 10px;
   border: none;
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
 }
+ssssssssssssssssss
