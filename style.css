@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+}
+
+header {
+  background-color: transparent;
+  padding: 10px 30px;
+}
+
+#container {
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
+.area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(32, 178, 170, 0.6);
+  border-radius: 20px;
+}
+
+.logocont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#logo {
+  border-radius: 10px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nbtn, .nbtnn {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nbtn:hover, .nbtnn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.home {
+  padding: 40px;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 178, 170, 0.7);
+  border-radius: 15px;
+  padding: 40px;
+  gap: 30px;
+}
+
+.img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.text {
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000;
+}
+
+.text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e2a38;
+}
+
+.text .para {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.box {
+  background-color: rgba(32, 178, 170, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.key {
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.box h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.box p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
