@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +8,18 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+/* Body */
 body {
-  background:linear-gradient(to right, #3abce3, #062e2f);
+  background: linear-gradient(to right, #3abce3, #062e2f);
 }
 
+/* Header */
 header {
   background-color: transparent;
   padding: 10px 30px;
 }
 
+/* Area Section */
 .area {
   display: flex;
   justify-content: space-between;
@@ -25,6 +29,7 @@ header {
   border-radius: 20px;
 }
 
+/* Logo Container */
 .logocont {
   display: flex;
   align-items: center;
@@ -35,12 +40,14 @@ header {
   border-radius: 10px;
 }
 
+/* Navbar */
 .navbar nav {
   display: flex;
   gap: 15px;
 }
 
-.nbtn, .nbtnn {
+.nbtn,
+.nbtnn {
   background: rgba(255, 255, 255, 0.15);
   padding: 10px 20px;
   border-radius: 10px;
@@ -48,25 +55,26 @@ header {
   text-transform: uppercase;
 }
 
-.nbtn:hover, .nbtnn:hover {
+.nbtn:hover,
+.nbtnn:hover {
   background: rgba(12, 215, 117, 0.129);
 }
 
+/* Home Section */
 .home {
   padding: 40px;
   background-color: linear-gradient(to right, #3abce3, #071010);
   min-height: 100vh;
-  /* transition: background 3s ease; */
   transition: all 1s ease;
   cursor: pointer;
-
-
 }
+
 .home:hover {
   transition: all 1s ease;
   background-color: linear-gradient(to right, #2c88a4, #0b595a);
 }
 
+/* Main Section */
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -78,12 +86,14 @@ header {
   gap: 30px;
 }
 
+/* Image */
 .img img {
   width: 300px;
   height: 300px;
   border-radius: 20px;
 }
 
+/* Text */
 .text {
   max-width: 500px;
   text-align: center;
@@ -105,6 +115,7 @@ header {
   line-height: 1.5;
 }
 
+/* Row Section */
 .row1 {
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +124,7 @@ header {
   margin-top: 40px;
 }
 
+/* Box */
 .box {
   background-color: rgba(32, 178, 171, 0.179);
   border-radius: 15px;
@@ -144,26 +156,28 @@ header {
   font-size: 0.95rem;
   color: #e0e0e0;
 }
-.footer-top{
-  display:flex;
+
+/* Footer */
+.footer-top {
+  display: flex;
   justify-content: center;
   padding-bottom: 30px;
-
-
 }
-.footer-content{
+
+.footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgba(32, 178, 171, 0.19);
   gap: 6px;
-  padding:20px;
+  padding: 20px;
   border-radius: 20px;
-  width:900px
+  width: 900px;
 }
-.socials{
-  display:flex;
+
+.socials {
+  display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -172,13 +186,12 @@ header {
   padding: 20px;
   border-radius: 25px;
   font-size: 0.95rem;
-  
 }
-.hr{
+
+.hr {
   width: 70%;
   height: 1px;
   padding-bottom: 15px;
-  
 }
 
 
