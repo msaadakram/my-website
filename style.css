@@ -211,12 +211,46 @@ header {
    =============================== */
 
 /* Tablets */
-@media (max-width: 800px) {
-  .navbar nav {
-    gap: 10px;
-    flex-wrap: wrap;
+@media (max-width: 925px) {
+ .area {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
   }
 
+  .navbar nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+
+  .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .img img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+}
+@media(max-width:800px){
+   .area {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .main {
+    flex-direction: column;
   .text h1 {
     font-size: 1.8rem;
   }
