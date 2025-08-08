@@ -155,6 +155,16 @@ header {
 }
 
 /* FOOTER */
+.footer-text {
+  display: flex;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 20px;
+}
 .footer-top {
   display: flex;
   justify-content: center;
